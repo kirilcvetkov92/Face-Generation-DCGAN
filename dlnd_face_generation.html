@@ -13297,7 +13297,7 @@ First let me try to define the problems that I faced during the training :</p>
 It required some preprocessing.<br>
 I trained the model for 20 epochs nearly 10 hours of training with Adam optimizer and tried different network sizes before.<br>
 It seems easier to train the model for 32x32 or 64x64 images, but with 128x128 I needed to be patient and to resolve some   problems.<br>
-I experienced with catastrophic forgetting, and tried a lot of approaches to improve my model.</p>
+I experienced with Non-convergence/Mode collapse, and tried a lot of approaches to improve my model.</p>
 <ul>
 <li><p>Started with : 
 ConvDim = 128<br>
@@ -13319,7 +13319,7 @@ Croped the face part picture to 128x128</p>
 <li><p>Attempt 3 : Changed Inverse convolution layer with Upsampling2D with NN interpolation</p>
 <ul>
 <li>Pros : It started generating more realistic images</li>
-<li>Cons : Still experienced catastrophic forget</li>
+<li>Cons : Still experienced the Non-convergence/Model collapse problems.</li>
 </ul>
 </li>
 </ul>
@@ -13328,7 +13328,7 @@ Croped the face part picture to 128x128</p>
 <li>Decreased learning rate to 0.0001  </li>
 <li><p>Added learning rate decay, so the LR was decayed by 0.95 every epoch</p>
 <ul>
-<li>Pros : It started generating even more realistic images, the training was stabilized, no catastrophic forget experienced.</li>
+<li>Pros : It started generating even more realistic images, the training was stabilized, I haven't experienced Non-convergence/Model collapse problems.</li>
 <li>Cons : The training was slower but stable, keeping Generator lost from in safe range from 0.3 to 0.6 and distriminator loss from 3-5</li>
 </ul>
 </li>
