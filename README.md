@@ -1,4 +1,4 @@
-# project-face-generation
+# Project face generation
 Project face generation
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Project Video](https://img.youtube.com/vi/_MNsEo0y8xk/0.jpg)](https://www.youtube.com/watch?v=_MNsEo0y8xk)
@@ -6,7 +6,7 @@ Project face generation
 
 
 
-**Project notes :**
+## Project notes
 Defining the problems that I faced during the training : 
 * Non-convergence: the model parameters oscillate, destabilize and never converge,
 * Mode collapse: the generator collapses which produces limited varieties of samples,
