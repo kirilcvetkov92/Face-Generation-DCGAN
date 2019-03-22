@@ -13287,7 +13287,12 @@ Generator(
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
+<p><strong>Answer:</strong>
+First let me try to define the problems that I faced during the training :</p>
+<ul>
+<li>Non-convergence: the model parameters oscillate, destabilize and never converge,</li>
+<li>Mode collapse: the generator collapses which produces limited varieties of samples,</li>
+</ul>
 <p>The original data is biased and the background or the face position and perspective may cause some learning difficultes.
 It required some preprocessing.<br>
 I trained the model for 20 epochs nearly 10 hours of training with Adam optimizer and tried different network sizes before.<br>
@@ -13301,19 +13306,17 @@ learning rate = 0.0002 and original dataset CelebA</p>
 </li>
 <li><p>Attempt 1 :<br>
 Pros : It started generating something that looks like human<br>
-Cons : I was not satisfied with the performance and I got catastrophic forget after 10 epoch.</p>
+Cons : I was not satisfied with the performance and I got Non-convergence/Mode collapse  after 10 epoch.</p>
 </li>
 <li><p>Attempt 2 : 
 Preprocessed CelebA dataset with face detection (opencv haarcascade, same as I used for the previous project)<br>
 Croped the face part picture to 128x128</p>
 <ul>
 <li>Pros : It started generating more realistic images</li>
-<li>Cons : Still experienced catastrophic forget</li>
+<li>Cons : Still experienced Non-convergence/Mode collapse problems after some training period</li>
 </ul>
 </li>
-<li><p>Attempt 3 :</p>
-</li>
-<li><p>Changed Inverse convolution layer with Upsampling2D with NN interpolation</p>
+<li><p>Attempt 3 : Changed Inverse convolution layer with Upsampling2D with NN interpolation</p>
 <ul>
 <li>Pros : It started generating more realistic images</li>
 <li>Cons : Still experienced catastrophic forget</li>
