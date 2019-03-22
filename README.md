@@ -1,9 +1,15 @@
-# Project face generation
-Project face generation
+# DCGAN implementation in PyTorch
+
+In this notebook, there is implemented GAN using convolutional layers in the generator and discriminator. This is called a Deep Convolutional GAN, or DCGAN for short. The DCGAN architecture was first explored in 2016 and has seen impressive results in generating new images; you can read the [original paper, here](https://arxiv.org/pdf/1511.06434.pdf).
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Project Video](https://img.youtube.com/vi/_MNsEo0y8xk/0.jpg)](https://www.youtube.com/watch?v=_MNsEo0y8xk)
 
 
+### Usage
+1. Download Algined and Cropped CelebA dataset.
+2. Use the [face_detect](https://github.com/sunshineatnoon/Paper-Implementations/blob/ad23812046ae8fa6c9c16fd26a8b1a14b4c10a59/BEGAN/Data/face_detect.py) script to crop images.
+3. To train the model, run the main script (Check flags for other tunable options):
 
 
 ## Project notes
