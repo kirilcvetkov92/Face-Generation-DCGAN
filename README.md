@@ -46,9 +46,9 @@ Croped the face part picture to 128x128
     * Cons : Still experienced the Non-convergence/Model collapse problems.
 
 
-Attempt 4 : 
-- Decreased learning rate to 0.0001  
-- Added learning rate decay, so the LR was decayed by 0.95 every epoch  
+* Attempt 4 : 
+    * Decreased learning rate to 0.0001  
+    * Added learning rate decay, so the LR was decayed by 0.95 every epoch  
 
     * Pros : It started generating even more realistic images, the training was stabilized, I haven't experienced Non-convergence/Model collapse problems.
     * Cons : The training was slower but stable, keeping Generator lost from in safe range from 0.3 to 0.6 and distriminator 
