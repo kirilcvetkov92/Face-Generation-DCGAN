@@ -8,7 +8,7 @@ In this notebook, there is implemented GAN using convolutional layers in the gen
 
 ### Usage
 1. Download Algined and Cropped CelebA dataset.
-2. Use the [face_detect](https://github.com/sunshineatnoon/Paper-Implementations/blob/ad23812046ae8fa6c9c16fd26a8b1a14b4c10a59/BEGAN/Data/face_detect.py) script to crop images.
+2. Use the [face_detect](https://github.com/kirilcvetkov92/Face-Generation-DCGAN/blob/master/data_preprocess/face_detect.py) script to crop images.
 3. To train the model, run the notebook
 
 
